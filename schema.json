@@ -1,0 +1,40 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "Modified-Interval",
+    "friendlyName": "Modified-Interval",
+    "description": "Set time interval to refresh data provider automatically",
+    "icon": "Stopwatch",
+    "settings": [
+      {
+        "type": "text",
+        "key": "interval",
+        "label": "Interval (in seconds)",
+        "required": true
+      },
+      {
+        "type": "boolean",
+        "key": "display",
+        "label": "Display component in frontend",
+        "defaultValue": true
+      },
+      {
+        "type": "text",
+        "key": "text",
+        "label": "Text to display",
+        "defaultValue": "Interval",
+        "dependsOn": {
+          "setting": "display",
+          "value": true
+        }
+      },
+      {
+        "type": "event",
+        "key": "trigger",
+        "label": "On interval"
+      }
+    ],
+    "info": "Experiencing bugs? Any feedback? visit: https://github.com/MartinPicc/budibase-interval-plugin/issues"
+  }
+}
